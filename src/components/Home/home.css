@@ -1,0 +1,11 @@
+.home-container{
+    padding: 0 3rem;
+    width: 100%;
+    position: relative;
+}
+
+@media screen and (max-width: 240px){
+    .home-container{
+        padding: 0 1.5rem;
+    }
+}

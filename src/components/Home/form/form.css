@@ -1,0 +1,142 @@
+form{
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.input-container{
+    width: 100%;
+    padding: 0.9rem 1.6rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+
+input{
+    width: 100%;
+    font-family: inherit;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+
+.input-dark::placeholder{
+    color: hsl(0, 0%, 100%);
+}
+
+.input-light::placeholder{
+    color: hsl(0, 0%, 52%);
+}
+
+@media screen and (max-width: 240px){
+    input::placeholder{
+        font-size: 1rem;
+    }
+}
+
+.search-icon{
+    margin-right: 1.6rem;
+}
+
+.select-container{
+    width: 50%;
+    position: absolute;
+    z-index: 100000000000;
+}
+
+
+@media screen and (max-width: 240px){
+    .select-container{
+        width: 70%;
+    }
+}
+
+.select-button{
+    margin-top: 2.2rem;
+    padding: 0.9rem 1.6rem;
+    border-radius: 5px;
+    font-size: 0.875rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.arrow-icon{
+    transform: scale(0.7)
+}
+
+
+.select-dropdown{
+    margin-top: 0.4rem;
+    border-radius: 5px;
+    font-size: 0.875rem;
+    list-style: none;
+    display: none;
+    cursor: pointer;
+}
+
+
+.select-container:hover .select-dropdown{
+    display: block;
+}
+
+.select-dropdown > li{
+    padding: 0.8rem 1.6rem;
+}
+
+
+
+.select-dropdown > .dark-item:hover{
+    background-color: hsl(209, 23%, 30%);
+    transition: all ease-in-out 0.1s;
+}
+
+.select-dropdown > .light-item:hover{
+    background-color: hsl(0, 0%, 95%);
+    transition: all ease-in-out 0.1s;
+}
+
+@media screen and (min-width: 500px){
+    .input-container{
+        width: 80%;
+    }
+
+    .select-container{
+        width: 40%;
+    }
+}
+
+
+@media screen and (min-width: 900px){
+
+    form{
+        margin-top: 3rem;
+    }
+
+    .input-container{
+        width: 30%;
+    }
+
+    .select-container{
+        width: 20%;
+        right: 3rem;
+        top: 0;
+    }
+
+    .select-button{
+        margin-top: 0;
+    }
+
+    .select-dropdown > li {
+        padding: 1rem 2.2rem;
+    }
+}

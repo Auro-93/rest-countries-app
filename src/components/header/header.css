@@ -1,0 +1,48 @@
+.header{
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.6rem;
+}
+
+@media screen and (min-width: 500px){
+    .header{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+
+@media screen and (max-width: 338px){
+    .header{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.title{
+    font-weight: 800;
+    cursor: default;
+}
+
+.change-theme{
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.change-theme:hover{
+    transform: scale(1.05);
+    transition: all ease-in-out 0.2s;
+}
+
+.theme-title{
+    font-weight: 600;
+}
+
+.moon-icon{
+    margin-right: 0.6rem;
+    transform: scale(1.4)
+}
+
